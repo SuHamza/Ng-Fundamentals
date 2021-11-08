@@ -13,9 +13,13 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
                 <span>&nbsp;</span>
                 <span>{{event.location.city}}, {{event.location.country}}</span>
             </div>
-            <button class="btn btn-primary" (click)="handleClickMe()">Click me!</button>
         </div>
-    `
+    `,
+    styles: [`
+        .thumbnail { min-height: 210px; }
+        .pad-left { margin-left: 10px; }
+        .well div { color: #bbb; }
+    `]
 })
 
 export class EventThumbnailComponent {
